@@ -1,0 +1,92 @@
+.reviews {
+    @media (min-width: 768px) {
+        padding-bottom: 220px;
+        .slider__content {
+            width: 652px;
+            margin-top: 55px;
+            padding: 50px 130px 50px 70px;
+            text-align: left;
+            align-items: flex-start;
+        }
+        .slider__images {
+            position: absolute;
+            right: -107px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .slider__name {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .slider__services {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        .slider__reviews {
+            font-size: 16px;
+        }
+        .slick-dots {
+            bottom: -65px;
+        }
+    }
+    @media (min-width: 1170px) {
+        padding-bottom: 240px;
+        .container {
+            max-width: 100%;
+            padding: 0;
+        }
+        &__wrap {
+            position: relative;
+        }
+        .container__default {
+            max-width: 1140px;
+            padding: 0 15px;
+        }
+        .slider__item {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .slider__content {
+            margin-left: -107px;
+            max-width: 613px;
+        }
+        .slick-list {
+            margin: 0 auto;
+        }
+        .slider__content {
+            margin-top: 90px;
+        }
+        .slick-dots {
+            bottom: -80px;
+        }
+        .reviews-side__slider {
+            display: block;
+            position: absolute;
+            width: 214px;
+            height: 192px;
+        }
+        .reviews-side__slider_left {
+            left: 0;
+            bottom: 42px;
+        }
+        .reviews-side__slider_right {
+            right: 0;
+            bottom: 42px;
+        }
+        .slider-side__item {
+            position: relative;
+        }
+        .slider-side__item:before {
+            content: '';
+            @include pos-left(0,0);
+            width: 100%;
+            height: 100%;
+            background-color: rgba(24, 44, 61,0.78);
+        }
+        .slider__picture {
+            width: 100%;
+            height: 192px;
+        }
+    }
+}

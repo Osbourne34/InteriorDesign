@@ -1,0 +1,65 @@
+.reviews {
+    padding-bottom: 201px;
+    &__slider {
+        position: relative;
+    }
+    .slider__content {
+        background-color: #fff;
+        @include flex(center,center,column);
+        text-align: center;
+        position: relative;
+        margin-top: 80px;
+        padding: 0 10px 50px;
+        box-shadow: 4px 7px 37px 14px rgba(0, 0, 1, 0.02);
+    }
+    .slider__images {
+        position: relative;
+        display: flex;
+        top: -35px;
+        height: 192px;
+        width: 214px;
+    }
+    .slider__img {
+        width: 100%;
+    }
+    .slider__name {
+        @include font(24px, $colorDark);
+        font-weight: 600;
+        line-height: 1.25;
+    }
+    .slider__services {
+        @include font(18px, $colorOrange);
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        margin-bottom: 20px;
+    }
+    .slider__reviews {
+        @include font(20px, $colorGray);
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slick-dots button {
+        width: 26px;
+        height: 3px;
+        background-color: #cdd4cf;
+        font-size: 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 0 6px;
+        transition: .3s;
+    }
+    .slick-active button {
+        background-color: #1a444a;
+    }
+    .reviews-side__slider {
+        display: none;
+    }
+}

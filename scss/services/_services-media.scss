@@ -1,0 +1,94 @@
+.services {
+    @media (min-width: 480px) {
+        .menu__item {
+            text-align: center;
+        }
+    }
+    @media(max-width: 767px) {
+        .container {
+            max-width: 100%;
+        }
+    }
+    @media(min-width: 768px) {
+        padding-bottom: 200px;
+        &__menu {
+            padding: 50px 0 20px;
+        }
+        .menu__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu__item {
+            width: 46%;
+            text-align: left;
+            margin-bottom: 50px;
+            &:last-child {
+                margin-bottom: 50px;
+            }
+        }
+        &__content {
+            padding-top: 60px;
+        }
+        &__inner {
+            display: block;
+            @include flex(space-between, center);
+            margin-bottom: 20px;
+        }
+        &__title {
+            @include font(30px, $colorDarkBlue, $Playfair);
+            font-weight: 400;
+        }
+        &__num {
+            @include font(22px, $colorDarkBlue);
+            letter-spacing: 0.39px;
+        }
+        &__text {
+            font-size: 18px;
+            max-width: 490px;
+            margin-bottom: 40px;
+        }
+        &__btn {
+            margin: 0;
+            padding: 1.6em 7em 1.5em;
+        }
+    }
+    @media (min-width: 1170px) {
+        &__wrap {
+            @include flex(space-between, flex-start);
+            padding-top: 65px;
+        }
+        &__menu {
+            padding: 0;
+        }
+        .menu__list {
+            flex-direction: column;
+        }
+        .menu__item {
+            width: 195px;
+            font-size: 18px;
+            margin-bottom: 80px;
+            font-weight: 400;
+            &:hover {
+                transform: translateX(30px);
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__content {
+            position: relative;
+        }
+        &__num {
+            font-size: 18px;
+        }
+        &__text {
+            margin: 0;
+        }
+        &__btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 1.3em 3em 1.2em;
+        }
+    }
+}

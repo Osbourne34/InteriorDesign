@@ -1,0 +1,27 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixin';
+@import 'main';
+
+
+// Блоки
+
+@import 'header/header';
+@import 'header/header-media';
+@import 'features/features';
+@import 'features/features-media';
+@import 'portfolio/portfolio';
+@import 'portfolio/portfolio-media';
+@import 'services/services';
+@import 'services/services-media';
+@import 'video/video';
+@import 'video/video-media';
+@import 'stage/stage';
+@import 'stage/stage-media';
+@import 'form/form';
+@import 'form/form-media';
+@import 'reviews/reviews';
+@import 'reviews/reviews-media';
+@import 'footer/footer';
+@import 'footer/footer-media';
+

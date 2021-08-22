@@ -1,0 +1,27 @@
+.footer {
+    @media (min-width: 768px) {
+        &__wrap {
+            padding: 75px 0;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__inner {
+            order: 2;
+        }
+        .footer__socials {
+            margin-bottom: 0;
+        }
+        .socials__link:before {
+            font-size: 25px;
+        }
+        &__copyright {
+            order: 1;
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+        &__author {
+            order: 3;
+            font-size: 16px;
+        }
+    }
+}

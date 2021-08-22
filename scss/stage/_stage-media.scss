@@ -1,0 +1,58 @@
+.stage {
+    @media (min-width: 768px) {
+        padding-bottom: 155px;
+        &__wrap {
+            padding-top: 70px;
+            @include flex(space-between, flex-start);
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 50%;
+            margin-bottom: 80px;
+        }
+        &__item + &__item {
+            margin-top: 0;
+        }
+        &__item:nth-child(n+5) {
+            margin-bottom: 0;
+        }
+        &__title {
+            display: flex;
+        }
+        .title__num {
+            display: block;
+            margin-right: 38px;
+            width: 22px;
+            height: 22px;
+            @include font(12px, $colorDark);
+            line-height: 21px;
+            font-weight: 700;
+            background-color: $colorOrange;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .title__word {
+            font-size: 22px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 1.5;
+            padding-left: 60px;
+        }
+    }
+    @media (min-width: 1170px) {
+        padding-bottom: 142px;
+        &__wrap {
+            padding-top: 80px;
+        }
+        &__item {
+            width: 33.333%;
+        }
+        &__item {
+            margin-bottom: 60px;
+        }
+        &__item:nth-child(n+4) {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.form {
+    @media (min-width: 768px) {
+        padding-bottom: 190px;
+        &__body {
+            padding: 70px 0 80px;
+            background-image: linear-gradient(rgba(24, 44, 61,0.8) rgba(24, 44, 61,0.8)), url('../img/form-bg-768px.jpg');
+        }
+        &__inner {
+            max-width: 100%;
+        }
+        &__title,
+        &__subtitle {
+            max-width: 560px;
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__group {
+            max-width: 474px;
+        }
+        &__subtitle {
+            font-size: 22px;
+            letter-spacing: 0.79px;
+            line-height: 1.1;
+            margin-bottom: 56px;
+        }
+        &__icon {
+            position: relative;
+            margin-bottom: 47px;
+            &:before {
+                @include font(20px, $colorWhite, 'icomoon');
+                opacity: .7;
+                position: absolute;
+                right: 0;
+            }
+        }
+        &__icon:nth-child(3) {
+            margin-bottom: 55px;
+        }
+        &__icon_user:before {
+            content: '\f2c0';
+        }
+        &__icon_phone:before {
+            content: '\e902';
+        }
+        &__icon_mail:before {
+            content: '\e903';
+        }
+        &__input {
+            padding-right: 25px;
+            font-size: 18px;
+            margin: 0;
+        }
+        &__conditions {
+            font-size: 18px;
+            max-width: 474px;
+            letter-spacing: 0.9px;
+        }
+    }
+    @media (min-width: 992px) {
+        padding-bottom: 150px;
+    }
+    @media (min-width: 1170px) {
+        &__wrap {
+            position: relative;
+        }
+        &__body {
+            background-image: linear-gradient(#182c3d, #182c3d);
+            padding: 70px 0;
+        }
+        &__inner {
+            width: 50%;
+            margin: 0;
+            text-align: left;
+            align-items: flex-start;
+        }
+        &__title {
+            font-size: 40px;
+            margin-bottom: 30px;
+            max-width: 465px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 1.7;
+            max-width: 430px;
+            margin-bottom: 40px;
+        }
+        &__icon {
+            margin-bottom: 40px;
+        }
+        &__icon:nth-child(3) {
+            margin-bottom: 45px;
+        }
+        &__input {
+            font-size: 14px;
+        }
+        &__btn {
+            font-size: 15px;
+            background-color: transparent;
+            border: 2px solid $colorWhite;
+            &:hover {
+                background-color: $colorWhite;
+                color: $colorDarkBlue;
+            }
+        }
+        &__conditions {
+            font-size: 14px;
+            letter-spacing: 0.7px;
+        }
+        &__images {
+            display: block;
+            @include pos-right(0,0);
+            width: 50%;
+            height: 100%;
+        }
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

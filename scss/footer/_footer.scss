@@ -1,0 +1,44 @@
+.footer {
+    background-color: #182c3d;
+    &__wrap {
+        @include flex(center,center, column);
+        padding: 95px 0;
+    }
+    &__inner {
+        @include flex(center,center, column);
+    }
+    &__logo {
+        margin-bottom: 40px;
+    }
+    .footer__socials {
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .socials__item + .socials__item {
+        margin-left: 70px;
+    }
+    .socials__link:before {
+        @include font(30px, $colorWhite, 'icomoon');
+    }
+    .socails__link_vk:before {
+        content: '\f189';
+    }
+    .socails__link_instagram:before {
+        content: '\e900';
+    }
+    .socails__link_facebook:before {
+        content: '\f09a';
+    }
+    &__copyright {
+        @include font(20px, $colorOrange);
+        font-weight: 500;
+        margin-bottom: 12px;
+        .footer__copyright_uppercase {
+            text-transform: uppercase;
+        }
+    }
+    &__author {
+        @include font(20px, $colorOrange);
+        font-weight: 500;
+    }
+}

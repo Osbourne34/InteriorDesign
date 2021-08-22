@@ -1,0 +1,21 @@
+@mixin flex ($jc, $ai, $fd:row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+@mixin font ($fs, $c, $ff:inherit) {
+    font-size: $fs;
+    color: $c;
+    font-family: $ff;
+}
+@mixin pos-left ($t, $l) {
+    position: absolute;
+    top: $t;
+    left: $l;
+}
+@mixin pos-right ($t, $l) {
+    position: absolute;
+    top: $t;
+    right: $l;
+}

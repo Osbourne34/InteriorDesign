@@ -1,0 +1,58 @@
+.video {
+    @media (min-width: 768px) {
+        padding-bottom: 187px;
+        &__player {
+            height: 812px;
+            background: linear-gradient(rgba(24, 44, 61,0.7) rgba(24, 44, 61,0.7) ), url('../img/video-poster-768px.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:hover {
+                background: linear-gradient(rgba(24, 44, 61,0) rgba(24, 44, 61,0) ), url('../img/video-poster-768px.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &__text {
+            width: 450px;
+            &:before {
+                width: 124px;
+                height: 124px;
+                margin-bottom: 41px;
+            }
+            &:after {
+                width: 29px;
+                height: 33px;
+                font-size: 35px;
+                top: 38px;
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        padding-bottom: 135px;
+        &__player {
+            height: 595px;
+            background: linear-gradient(rgba(24, 44, 61,0.7) rgba(24, 44, 61,0.7) ), url('../img/video-poster-992px.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:hover {
+                background: linear-gradient(rgba(24, 44, 61,0) rgba(24, 44, 61,0) ), url('../img/video-poster-992px.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &__text {
+            width: 100%;
+            &:before {
+                width: 84px;
+                height: 84px;
+                margin-bottom: 28px;
+            }
+            &:after {
+                top: 28px;
+                width: 19px;
+                height: 22px;
+                font-size: 22px;
+            }
+        }
+    }
+}
